@@ -1,14 +1,12 @@
 import logo from '../images/PittOhioLogo.png'
+import {AiOutlineMenu} from 'react-icons/ai'
 
-function NavHome({hamburgerMenu}) {
+function NavBurger({hamburgerMenu}) {
     return ( 
-        <div className='nav-container'>
-        <div className='logo-nav'>
-            <img className="logo-nav-img" src={logo} alt="PittOhio logo" />
-        </div>
-        <div>
+        <div className="nav-container-burger">
             <nav>
-                <ul className='nav-list'>
+                <AiOutlineMenu className='hamburger-icon' />
+                <ul className='nav-list-burger'>
                     <li>About Us</li>
                     <li>Services</li>
                     <li>Career Center</li>
@@ -17,8 +15,7 @@ function NavHome({hamburgerMenu}) {
                 </ul>
             </nav>
         </div>
-    </div>
      );
 }
 
-export default NavHome;
+export default NavBurger;

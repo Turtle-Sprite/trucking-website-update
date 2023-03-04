@@ -37,9 +37,57 @@
     font-family: 'Cambay';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2vw;
     line-height: 40px;
     letter-spacing: 0.1em;
+}
+
+/* if below 780 px, display nav-list-burger */
+.nav-container-burger {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .hamburger-icon {
+        
+    }
+    .nav-container-burger{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+    }
+    .nav-container {
+        display: none;
+    } 
+    .nav-list-burger {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-list-burger li, button {
+        font-family: 'Cambay';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        letter-spacing: 0.1em;
+    }
+    .nav-container {
+        display: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-logo {
+        display: absolute;
+        top: 0;
+        left: 0;
+    }   
+}
+
+@media (max-width: 780px) {
+    .logo-nav {
+        display: none;
+    }
 }
 
 .logo-nav-img {
@@ -68,7 +116,6 @@
 
 }
 
-.tra
 
 
 

@@ -4,16 +4,26 @@ import heroImg from '../images/Semi-Mountains.jpg'
 import NavHome from './NavHome';
 import {FiMap, FiFlag} from 'react-icons/fi'
 import FastTruck from '../Components/FastTruck'
+import {useState, useEffect} from 'react'
+import NavBurger from './NavBurger';
 
 function Home() {
+    const [hamburgerMenu, setHamburgerMenu] = useState(false)
+
+
+
+
     return (
         <>
             <div className='home-container'>
                 {/* Make a div wrapper for image */}
                 <div className='img-wrapper'>
                     <img className="semi-image" src={heroImg} alt='Semi-truck driving through mountains'/>
-                    {/* Make a Home only Nav */}
+                    {/* Make a Home only Nav & Burger menu */}
+                    {/* false is regular menu */}
+                    {/* true sets Navburger component */}
                     <NavHome />
+                    <NavBurger />
                 </div>
                 <div className="company-container">
                     <div className='tag-lines'>
