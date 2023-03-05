@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 //Pages/Components
-import Home from './Pages/Home.jsx'
+import Home from './Pages/Home/Home.jsx'
 
 function App() {
   return (

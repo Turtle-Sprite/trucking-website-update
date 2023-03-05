@@ -1,0 +1,225 @@
+
+/* Home Page  */
+.home-container {
+    background: linear-gradient(180deg, #E1E2EE 99.99%, rgba(237, 221, 221, 0) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.img-wrapper {
+    height: 50vh;
+    width: 100vw; 
+}
+
+.semi-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 6px solid #A7161B;;
+    opacity: 0.85;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+/* Home Nav  */
+.nav-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-list li, button {
+    margin-right: 30px;
+    font-family: 'Cambay';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+}
+
+.logo-nav-img {
+    width: 70%;
+    height: auto;
+}
+
+.nav-container-burger {
+    display: none;
+}
+
+@media (max-width: 1035px) {
+    .nav-container-burger{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .nav-container {
+        display: none;
+    } 
+    
+    .hamburger-icon {
+        position:absolute;
+        top: 12px;
+        left: 12px;
+        width: 45px;
+        height: 45px;
+    }
+    .hidden {
+        display: none;
+    }
+    .nav-list-burger {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, #E1E2EE 99.99%, rgba(237, 221, 221, 0) 100%);
+        width: 70vw;
+        height: 45vh;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 2px solid #A7161B;
+    }
+    .nav-list-burger li, button {
+        font-family: 'Cambay';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        letter-spacing: 0.1em;
+    }
+    .nav-container {
+        display: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-logo {
+        display: absolute;
+        top: 0;
+        left: 0;
+    }   
+}
+
+@media  (max-width: 780px) {
+    .nav-list-burger li, button {
+        font-family: 'Cambay';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+    }
+    .nav-list-burger {
+        width: 100vw;
+        height: 35vh;
+    }
+    .hamburger-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+/* Company Description */
+.company-container {
+    background: linear-gradient(180deg, #E1E2EE 99.99%, rgba(237, 221, 221, 0) 100%);
+    width: 100%;
+    height: 45vh;
+}
+.consulting-container {
+    background: #C1C4D3;
+    width: 100%;
+    height: 450px;
+}
+.hiring-container {
+    background: #C9CBD5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 450px;
+}
+
+/* Animations-stretch goal */
+
+.prof-cons {
+
+}
+.delivery {
+
+}
+.years {
+
+}
+
+/* Cards */
+.card {
+    background: rgba(74, 71, 81, 0.03);
+    border: 3px solid rgba(43, 33, 33, 0.2);
+    border-radius: 10px;
+    height: 80%;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 20px;
+}
+.card-title {
+    font-family: 'Black Han Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vh;
+    line-height: 20px;
+    /* or 83% */
+    letter-spacing: 0.15em;
+    color: #292D32;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+}
+
+/* ShippingTracking/Estimates */
+
+.shipping-tracking-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    min-height: 200px;
+}
+
+@media  (max-width: 900px ) {
+    .shipping-tracking-container {
+    display: block;
+    margin: 0 auto;
+    }
+    
+}
+
+.shipping-tracking-container textarea {
+    background: #E2E7ED;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 85%;
+    height: 35%;
+}
+
+.estimate-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.estimate-form input {
+    background: #E2E7ED;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.estimate-btn {
+    
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}

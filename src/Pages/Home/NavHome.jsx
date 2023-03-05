@@ -1,4 +1,4 @@
-import logo from '../images/PittOhioLogo.png'
+import logo from '../../images/PittOhioLogo.png'
 
 function NavHome({hamburgerMenu}) {
     return ( 
@@ -13,7 +13,7 @@ function NavHome({hamburgerMenu}) {
                     <li>Services</li>
                     <li>Career Center</li>
                     <li>Contact Us</li>
-                    <button>Login</button>
+                    <li><button>Login</button></li>
                 </ul>
             </nav>
         </div>

@@ -1,16 +1,16 @@
-import Footer from '../Partials/Footer'
+import Footer from '../../Partials/Footer'
 import './Home.css'
-import heroImg from '../images/Semi-Mountains.jpg'
+import heroImg from '../../images/Semi-Mountains.jpg'
 import NavHome from './NavHome';
 import {FiMap, FiFlag} from 'react-icons/fi'
-import FastTruck from '../Components/FastTruck'
+import FastTruck from '../../Components/FastTruck'
 import {useState, useEffect} from 'react'
 import NavBurger from './NavBurger';
+import TrackShipment from './TrackShipment';
+import ShippingEstimate from './ShippingEstimate';
 
 function Home() {
     const [hamburgerMenu, setHamburgerMenu] = useState(false)
-
-
 
 
     return (
@@ -38,12 +38,15 @@ function Home() {
                     </div>
                     <div className="shipping-tracking-container">
                         <div className='card track-shipping'>
-
+                            <TrackShipment />
+                        </div>
+                        <div className='card shipping-estimate'>
+                            <ShippingEstimate />
                         </div>
                     </div>
                 </div>
                 <div className="consulting-container">
-
+                    
                 </div>
                 <div className="hiring-container">
 
