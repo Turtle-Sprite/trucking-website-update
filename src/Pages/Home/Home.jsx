@@ -8,6 +8,8 @@ import {useState, useEffect} from 'react'
 import NavBurger from './NavBurger';
 import TrackShipment from './TrackShipment';
 import ShippingEstimate from './ShippingEstimate';
+import ConsultingContainer from './ConsultingContainer'
+import HiringContainer from './HiringContainer';
 
 function Home() {
     const [hamburgerMenu, setHamburgerMenu] = useState(false)
@@ -45,19 +47,14 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="consulting-container">
-                    
+                <div>
+                    <ConsultingContainer />
                 </div>
-                <div className="hiring-container">
-
+                <div>
+                    <HiringContainer />
                 </div>
             </div>
 
-
-
-
-
-            {/* <Footer /> */}
         </>
     );
 }
